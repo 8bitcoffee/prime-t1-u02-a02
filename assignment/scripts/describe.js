@@ -26,9 +26,9 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
+// name was set to 'Dane'
+// if statement checks if it equals 'Mary'. Since that is false, it returns the else statement
+// console logs 'How do you do?'
 //
 
 //CODE
@@ -45,10 +45,11 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// secret was defined with a null value
+// code was defined as 123
+// if block checked to see if code was 123 and since that is true, code was multipled by 2 and the value was updated.
+// if statement checked if code is greater than 250. That is false since code is now 246.
+// console logs 'secret' since the second if statement was not activated
 
 //CODE
 /*
@@ -70,10 +71,13 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// isStudent is defined as true
+// age is defined as 34
+// zip is defined as 55407
+// if statement checks if isStudent equals true (true) AND zip is greater than 80000 (false) which returns false
+// else if checks if isStudent === false (false) OR age < 30 (false) which returns false
+// else if checks if isStudent equals true (true) which returns true and results in 'Welcome to Prime!' being logged to console.
+// else statement is skipped since else if was activated
 
 //CODE
 /*
@@ -139,6 +143,22 @@ if (mix === true) {
 }
 */
 
+// FIX - colorOne should be set to 'blue;
+// colorTwo should be set to 'red'
+// inside the if statement, the result should also change colorTwo to 'purple'
+
+/*
+let colorOne = 'blue';
+let colorTwo= 'red';
+let mix = true;
+
+if (mix===true) {
+  colorOne = 'purple';
+  colorTwo = 'purple';
+}
+
+*/
+
 //5. We start with two variables -- temp is set to 40 and time is set to 4.
 // We check if temp is higher than 39 and if time is greater or equal to  4 
 // -- they are so we console.log 'throw away the food!'
@@ -148,6 +168,17 @@ let temp = 40;
 const time = 4;
 
 if (temp > 39 || time >= 4) {
+  console.log('throw away the food!');
+}
+*/
+
+// FIX - change the || to && since || is OR not AND
+
+/*
+let temp = 40;
+const time = 4;
+
+if (temp > 39 && time >= 4) {
   console.log('throw away the food!');
 }
 */
@@ -167,3 +198,18 @@ if(minAge <= age) {
 }
 */
 
+// FIX - while it will return correct, the format is incorrect for the if statement.
+// instead of if(minAge <= age) check if (age >= minAge)
+// true for the if statement should console.log('enter') instead of 'no entry'
+// else statement should console.log('no entry') instead of 'enter'
+
+/*
+let age = 21;
+const minAge = 21;
+
+if(age >= minAge) {
+  console.log('enter');
+} else {
+  console.log('no entry');
+}
+*/
